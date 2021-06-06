@@ -18,7 +18,10 @@ def main():
 
 
 def pair(people: {str}):
-    # TODO: Handle case where number of people <= 1
+    if len(people) <= 1:
+        # TODO: throw instead
+        return
+
     pairings = []
     already_paired = set()
 
@@ -56,8 +59,7 @@ def display_pairings(pairings: [str]):
 
 def select_random_person(people: {str}, already_paired: {str}):
     available = people.symmetric_difference(already_paired)
-    elements = list(available)
-    return elements[random.randint(0, len(elements) - 1)]
+    return random.choice(list(available))
 
 
 if __name__ == '__main__':
