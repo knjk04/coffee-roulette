@@ -13,7 +13,7 @@ people = {''}
 # TODO: export as spreadsheet
 def main():
     global people
-    people = read_first_column()
+    people = read_first_column('sample_people.xlsx')
 
     pairings = pair(people)
     display_pairings(pairings)
@@ -67,7 +67,7 @@ def select_random_person(people: {str}, already_paired: {str}):
 @app.route("/")
 def test_route():
     global people
-    people = read_first_column()
+    people = read_first_column('sample_people.xlsx')
     print(people)
     return 'hi'
 

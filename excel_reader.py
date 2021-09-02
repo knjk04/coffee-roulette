@@ -1,9 +1,8 @@
 import openpyxl
 
 
-def read_first_column():
-    workbook = openpyxl.load_workbook('sample_people.xlsx')
-    sheet = workbook['Sheet1']
+def read_first_column(file_name):
+    sheet = load_first_sheet(file_name)
     first_column = list(sheet.columns)[0]
 
     values = []
@@ -14,3 +13,13 @@ def read_first_column():
         values.append(cell.value)
 
     return values
+
+
+def load_first_sheet(file_name):
+    workbook = load_workbook(file_name)
+    first_sheet = workbook.sheetnames[0]
+    return workbook[first_sheet]
+
+
+def load_workbook(file_name):
+    return openpyxl.load_workbook(file_name)
