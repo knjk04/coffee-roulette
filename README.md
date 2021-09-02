@@ -13,5 +13,7 @@ or if your work does not overlap).
 ## TODO:
 
 - [ ] Export pairings into a spreadsheet
-- [ ] Read from a spreadsheet
-- [ ] Take into account who has already been paired from previous sessions (the state would be stored in a spreadsheet)
+- [ ] Create an Excel module
+- [ ] Add unit tests and CI
+- [ ] Read existing data from a spreadsheet (take into account who has already been paired from previous sessions)
+- [ ] Add frontend
