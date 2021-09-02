@@ -15,5 +15,6 @@ or if your work does not overlap).
 - [ ] Export pairings into a spreadsheet
 - [ ] Create an Excel module
 - [ ] Add unit tests and CI
+- [ ] Set up endpoints
 - [ ] Read existing data from a spreadsheet (take into account who has already been paired from previous sessions)
 - [ ] Add frontend
