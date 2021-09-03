@@ -3,7 +3,7 @@ import openpyxl
 
 
 def workbook_path():
-    return workbook_name()
+    return workbook_parent_dir() + workbook_name()
 
 
 def workbook_name():
@@ -11,7 +11,7 @@ def workbook_name():
 
 
 def workbook_parent_dir():
-    return './'
+    return '../resources/'
 
 
 def create_workbook():
@@ -26,7 +26,8 @@ def create_workbook():
     num_rows = len(basket)
     fill_diagonal(sheet, num_rows)
 
-    workbook.save(workbook_path())
+    path = workbook_path()
+    workbook.save(path)
 
 
 def populate_matrix_row_header(sheet, data):
