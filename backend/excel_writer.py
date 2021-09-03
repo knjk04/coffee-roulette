@@ -14,7 +14,7 @@ def create_workbook():
     num_rows = len(basket)
     fill_diagonal(sheet, num_rows)
 
-    workbook.save('coffee_roulette_pairings.xlsx')
+    workbook.save('../resources/coffee_roulette_pairings.xlsx')
 
 
 def populate_matrix_row_header(sheet, data):
