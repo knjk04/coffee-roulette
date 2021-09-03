@@ -1,6 +1,6 @@
 # coffee-roulette
 
-A simple script to pair people for coffee roulette (this could also be used for secret santa). If there are an odd number of people to pair, one group of three is created.
+A web app (Python with Flask, and Angular) to pair people for coffee roulette. If there are an odd number of people to pair, one group of three is created.
 
 ## What is coffee roulette?
 
@@ -17,4 +17,3 @@ or if your work does not overlap).
 - [ ] Add unit tests and CI
 - [ ] Set up endpoints
 - [ ] Read existing data from a spreadsheet (take into account who has already been paired from previous sessions)
-- [ ] Add frontend
