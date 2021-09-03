@@ -63,6 +63,10 @@ def select_random_person(people: {str}, already_paired: {str}):
     available = people.symmetric_difference(already_paired)
     return random.choice(list(available))
 
+@app.route("/")
+def upload():
+
+
 
 @app.route("/")
 def test_route():

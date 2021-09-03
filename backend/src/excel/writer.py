@@ -2,6 +2,18 @@ from openpyxl.styles import PatternFill
 import openpyxl
 
 
+def workbook_path():
+    return workbook_name()
+
+
+def workbook_name():
+    return 'coffee_roulette_pairings.xlsx'
+
+
+def workbook_parent_dir():
+    return './'
+
+
 def create_workbook():
     workbook = openpyxl.Workbook()
     sheet = workbook.active
@@ -14,7 +26,7 @@ def create_workbook():
     num_rows = len(basket)
     fill_diagonal(sheet, num_rows)
 
-    workbook.save('../resources/coffee_roulette_pairings.xlsx')
+    workbook.save(workbook_path())
 
 
 def populate_matrix_row_header(sheet, data):
