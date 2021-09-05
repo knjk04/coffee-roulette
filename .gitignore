@@ -2,3 +2,5 @@
 venv/
 env/
 coffee_roulette_pairings.xlsx
+
+**/__pycache__/
