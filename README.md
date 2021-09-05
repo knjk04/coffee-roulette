@@ -7,8 +7,11 @@ A web app (Python with Flask, and Angular) to pair people for coffee roulette. I
 Prerequisites: 
 - Python 3.6 or higher
 - Node.js 11 or higher
+  
+Running the backend:
+1. In the `backend` directory, run `pip install -r requirements.txt` to install the required Python packages
 
-Running the frontend
+Running the frontend:
 1. Run `npm install` in the `frontend` directory to install dependencies
 2. Run `ng s` to run the frontend
 
