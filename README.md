@@ -12,8 +12,9 @@ Running the backend:
 1. In the `backend` directory, run `pip install -r requirements.txt` to install the required Python packages
 
 Running the frontend:
-1. Run `npm install` in the `frontend` directory to install dependencies
-2. Run `ng s` to run the frontend
+1. Run `npm i` in the `frontend` directory to install dependencies
+2. Install the Angular CLI globally: `npm install -g @angular/cli@latest`
+2. Run `ng s` in the `frontend/` directory to run the frontend
 
 ## What is coffee roulette?
 
@@ -26,7 +27,5 @@ or if your work does not overlap).
 ## TODO:
 
 - [ ] Export pairings into a spreadsheet
-- [ ] Create an Excel module
 - [ ] Add unit tests and CI
-- [ ] Set up endpoints
 - [ ] Read existing data from a spreadsheet (take into account who has already been paired from previous sessions)
