@@ -11,7 +11,8 @@ def workbook_name():
 
 
 def workbook_parent_dir():
-    return '../resources/'
+    return './resources/'
+    # return '../resources/'
 
 
 def create_workbook():
