@@ -11,6 +11,14 @@ class TestPairPeople(unittest.TestCase):
         self.assertFalse(is_odd(0))
         self.assertFalse(is_odd(2))
 
-    # TODO: test that an exception is thrown if the set of people (arg) contains less than 2 people
+
+    def test_pair_raises_exception_when_no_people_to_pair(self):
+        with self.assertRaises(ValueError):
+            pair({})
+
+
+    def test_pair_raises_exception_when_one_person_to_pair(self):
+        with self.assertRaises(ValueError):
+            pair({'Arthur'})
 
     # TODO: assert that there is one group of three if there are an odd number of people to pair

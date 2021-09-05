@@ -18,8 +18,7 @@ def display_pairings(pairings: [str]):
 
 def pair(people: {str}):
     if len(people) <= 1:
-        # TODO: throw instead
-        return
+        raise ValueError(f'Only {len(people)} to pair, but there must be at least 2 people')
 
     pairings = []
     already_paired = set()
