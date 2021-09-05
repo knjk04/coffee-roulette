@@ -9,7 +9,6 @@ from excel.reader import read_first_column
 
 app = Flask(__name__)
 cors = CORS(app, origins=['http://localhost:4200'])
-# cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 
 people = {''}

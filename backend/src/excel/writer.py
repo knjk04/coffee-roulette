@@ -12,7 +12,6 @@ def workbook_name():
 
 def workbook_parent_dir():
     return './resources/'
-    # return '../resources/'
 
 
 def create_workbook():
@@ -54,11 +53,3 @@ def fill_diagonal(sheet, num_rows):
         cell = sheet.cell(row=(i + 2), column=(i + 2))
         cell = cell.column_letter + str(cell.row)
         sheet[cell].fill = PatternFill("solid", fgColor="000000")
-
-
-def main():
-    create_workbook()
-
-
-if __name__ == '__main__':
-    main()
